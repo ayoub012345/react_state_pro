@@ -31,10 +31,11 @@ class App extends React.Component
   }
   componentDidMount()
   {
-    console.log(this.state.person);
+    console.log("componentDidMount");
   }
   componentDidUpdate()
   {
+    console.log("componentDidUpdate");
     var q=0;
     const my_in_c=()=>{clearInterval(my_in)};
     const my_in =setInterval(()=>{q++;console.log(q);if(q==10){my_in_c()}},1000);
